@@ -11,6 +11,10 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
+### Auth with Guardian
+- Set `export PACKING_LIST_SECRET_KEY=*some key*` before running the server to have auth running.
+  - You can run `mix guardian.gen.secret` to generate a new key
+
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
