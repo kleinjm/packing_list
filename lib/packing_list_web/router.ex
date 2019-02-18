@@ -17,6 +17,9 @@ defmodule PackingListWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/pack", PackController, :index
+    get "/lists", ListsController, :index
+    get "/lists/:list_id", ListsController, :show
   end
 
   # Other scopes may use custom stacks.
